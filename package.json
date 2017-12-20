@@ -2,8 +2,9 @@
   "name": "advanced-object",
   "version": "0.0.1",
   "description": "Advanced javascript objects",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "babel src -d lib",
     "test": "test"
   },
   "repository": {
@@ -19,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/programmingstandards/advanced-object/issues"
   },
-  "homepage": "https://github.com/programmingstandards/advanced-object#readme"
+  "homepage": "https://github.com/programmingstandards/advanced-object#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
 }
