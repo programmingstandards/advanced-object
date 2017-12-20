@@ -1,0 +1,23 @@
+{
+  "name": "advanced-object",
+  "version": "0.0.1",
+  "description": "Advanced javascript objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programmingstandards/advanced-object.git"
+  },
+  "keywords": [
+    "object",
+    "map"
+  ],
+  "author": "Samu Joseph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/programmingstandards/advanced-object/issues"
+  },
+  "homepage": "https://github.com/programmingstandards/advanced-object#readme"
+}
