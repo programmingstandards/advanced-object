@@ -5,6 +5,11 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
+    "build-amd": "rollup src/main.js -o dist/lib/main.amd.js -f amd",
+    "build-cjs": "rollup src/main.js -o dist/lib/main.cjs.js -f cjs",
+    "build-esm": "rollup src/main.js -o dist/lib/main.esm.js -f es",
+    "build-umd": "rollup src/main.js -o dist/lib/main.umd.js -f umd -n advancedObject",
+    "build-iife": "rollup src/main.js -o dist/lib/main.iife.js -f iife -n advancedObject",
     "test": "test"
   },
   "repository": {
@@ -23,6 +28,8 @@
   "homepage": "https://github.com/programmingstandards/advanced-object#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "rollup": "^0.52.3",
+    "rollup-plugin-commonjs": "^8.2.6"
   }
 }

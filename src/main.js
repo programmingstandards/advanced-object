@@ -1,6 +1,6 @@
 import objectMap from './array-prototype/objectMap';
 
 
-module.exports =  {
+export default {
     objectMap,
 };
