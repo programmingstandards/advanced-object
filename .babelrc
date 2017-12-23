@@ -3,6 +3,10 @@
         [
             "env", 
             {
+                "targets": {
+                    "node": "4.10",
+                    "browsers": ["Firefox > 20", "chrome > 30", "safari > 6"]
+                },
                 "modules": false
             }
         ]
