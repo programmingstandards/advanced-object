@@ -2,10 +2,9 @@
   "name": "advanced-object",
   "version": "0.0.2",
   "description": "Advanced javascript objects",
-  "main": "lib/index.js",
+  "main": "dist/bundle.umd.js",
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "test"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -23,6 +22,9 @@
   "homepage": "https://github.com/programmingstandards/advanced-object#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "rollup": "^0.52.3",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.2.6"
   }
 }
