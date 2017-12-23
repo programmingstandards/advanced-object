@@ -2,16 +2,9 @@
   "name": "advanced-object",
   "version": "0.0.2",
   "description": "Advanced javascript objects",
-  "main": "lib/index.js",
+  "main": "dist/bundle.umd.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "build-amd": "rollup src/main.js -o dist/lib/main.amd.js -f amd",
-    "build-cjs": "rollup src/main.js -o dist/lib/main.cjs.js -f cjs",
-    "build-esm": "rollup src/main.js -o dist/lib/main.esm.js -f es",
-    "build-umd": "rollup src/main.js -o dist/lib/main.umd.js -f umd -n advancedObject",
-    "build-iife": "rollup src/main.js -o dist/lib/main.iife.js -f iife -n advancedObject",
-    "test": "test"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",

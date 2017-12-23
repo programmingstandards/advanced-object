@@ -3,7 +3,7 @@ import babel from 'rollup-plugin-babel';
 export default {
     input: 'src/main.js',
     output: {
-        file: 'dist/lib/main.umd.js',
+        file: 'dist/bundle.umd.js',
         format: 'umd',
         name: 'advancedObject',
     },
