@@ -4,7 +4,10 @@
   "description": "Advanced javascript objects",
   "main": "dist/bundle.umd.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "cross-env NODE_ENV=production BABEL_ENV=production && rollup -c",
+    "test": "cross-env NODE_ENV=production BABEL_ENV=test && jest",
+    "test-dev": "cross-env NODE_ENV=development BABEL_ENV=test && jest",
+    "test-dev-live": "cross-env NODE_ENV=development BABEL_ENV=test && jest --watch"
   },
   "repository": {
     "type": "git",
@@ -22,7 +25,11 @@
   "homepage": "https://github.com/programmingstandards/advanced-object#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-jest": "^22.0.4",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.3",
+    "jest": "^22.0.4",
     "rollup": "^0.52.3",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.2.6"

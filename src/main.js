@@ -1,6 +1,1 @@
-import objectMap from './array-prototype/objectMap';
-
-
-export default {
-    objectMap,
-};
+export objectMap from './array-prototype/objectMap';
