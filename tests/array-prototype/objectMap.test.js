@@ -9,7 +9,7 @@ describe('objectMap tests', () => {
         c: 30,
     };
 
-    let doubler = (key, value) => value * 2;
+    let doubler = ([key, value]) => value * 2;
     test('values should double', () => {
         console.log(objectMap);
         // expect(advancedObject.objectMap(obj, doubler)).toEqual({
