@@ -1,5 +1,8 @@
 {
-    "plugins": ["transform-export-extensions"],    
+    "plugins": [
+        ["transform-export-extensions"],
+        ["transform-object-rest-spread", { "useBuiltIns": true }]
+],    
     "env": {
         "production": {
             "presets": [
