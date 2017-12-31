@@ -1,6 +1,4 @@
-// let objectMap = require("../../src/main");
 import {objectMap} from "../../src/main";
-// import advancedObject from "../../src/main";
 
 describe('objectMap tests', () => {
     let obj = {

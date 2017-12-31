@@ -6,7 +6,7 @@ export const objectFill = (obj, fillValue, ...keys) => {
                 res[key] = fillValue;
                 return res;
             }, {}),
-        }
+        };
     } 
     return Object.entries(obj)
         .reduce((res, [key]) => {
